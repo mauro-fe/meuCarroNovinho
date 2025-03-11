@@ -19,7 +19,7 @@
         <a href="#">
             <img src="/img/logo.png" alt="Logo" title="Logo">
         </a>
-        <a href="" class="menu">
+        <a href="javascript:mostrarmenu()" class="menu">
             <i class="fas fa-bars"></i>
         </a>
         <nav>
@@ -82,6 +82,11 @@
         </p>
     </footer>
 
+    <script>
+        function mostrarmenu() {
+            document.querySelector("header nav").classList.toggle('mostrar')
+        }
+    </script>
 </body>
 
 </html>
