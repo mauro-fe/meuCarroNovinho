@@ -6,6 +6,7 @@ body {
     padding-top: 100px;
 }
 
+
 header {
     width: 100%;
     background-color: #ffcb00;
@@ -14,7 +15,6 @@ header {
     display: inline-block;
     position: fixed;
     top: 0;
-
 }
 
 header nav {
@@ -63,6 +63,14 @@ main {
 
 .grid .coluna img {
     width: 100%;
+    border-radius: 10px;
+    opacity: .7;
+    transition: .5s all;
+}
+
+.grid .coluna img:hover {
+    opacity: 1;
+    transform: translate(10px, 10px);
 }
 
 .grid .coluna {
@@ -74,25 +82,40 @@ main {
 
 .btn {
     background-color: #ffcb00;
-    text-decoration: none;
-    padding: 10px;
-    padding: 10px 30px;
-    color: #f00;
+    padding: 5px 15px;
     border-radius: 100px;
     transition: all .5s;
+
 }
 
 .btn:hover {
     background: #f00;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #f00;
+}
+
+.btn a:hover {
     color: #fff;
 }
+
+.teste {
+    transition: .5s all;
+}
+
+.teste:hover {
+    transform: scale(105%);
+}
+
 
 footer {
     background-color: #ffcb00;
     padding: 20px 0;
 }
 
-footer a {
+footer .icon {
     background: #fff;
     text-decoration: none;
     margin: 20px;
@@ -103,11 +126,22 @@ footer a {
     display: inline-block;
     line-height: 30px;
     transition: all .5s;
+
 }
 
-footer a:hover {
+footer .icon:hover {
     background-color: #f00;
     color: #fff;
+}
+
+.footer-item a {
+    text-decoration: none;
+    color: rgb(106, 104, 104);
+    transition: .5s all;
+}
+
+.footer-item a:hover {
+    color: rgb(255, 255, 255);
 }
 
 .menu {
@@ -116,6 +150,12 @@ footer a:hover {
 
 .mostrar {
     display: block;
+}
+
+#main {
+    margin: 50px auto;
+    border-radius: 20px;
+    padding: 20px;
 }
 
 @media(max-width: 420px) {

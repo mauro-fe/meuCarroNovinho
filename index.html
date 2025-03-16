@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <a href="#">
             <img src="/img/logo.png" alt="Logo" title="Logo">
         </a>
@@ -24,64 +24,67 @@
         </a>
         <nav>
             <ul>
-                <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
-                <li><a href="#"><i class="fa-solid fa-truck"></i> Estoque</a></li>
-                <li><a href="#"><i class="fa-solid fa-envelope"></i> Contato</a></li>
+                <li><a href="#header"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#main"><i class="fa-solid fa-truck"></i> Estoque</a></li>
+                <li><a href="#footer"><i class="fa-solid fa-envelope"></i> Contato</a></li>
             </ul>
         </nav>
     </header>
     <div class="banner">
         <img src="/img/banner.jpg" alt="Bbanner" title="Banner">
     </div>
-    <main>
+    <main id="main">
         <h1>Veiculos em Destaque</h1>
 
         <div class="grid">
             <div class="coluna">
                 <img src="img/1.jpg" alt="carro 1" title="carro 2">
-                <p>Kwid</p>
-                <p>
-                    <a href="kwid.html" title="Detalhes" class="btn">
+                <h3>Kwid</h3>
+                <p>O carro mais econômico da atualidade, de classe baixa.</p>
+                <div class="btn">
+                    <a href="kwid.html" title="Detalhes">
                         <i class="fas fa-search"></i> Ver detalhes
                     </a>
-                </p>
+                </div>
             </div>
             <div class="coluna">
                 <img src="img/2.jpg" alt="carro 2" title="carro 2">
-                <p>HB20</p>
-                <p>
-                    <a href="HB20.html" title="Detalhes" class="btn">
-                        <i class="fas fa-search"></i> Ver detalhes
+                <h3>HB20</h3>
+                <p>Um pouco mais evoluído, mas ainda de classe média.</p>
+                <div class="btn">
+                    <a href="HB20.html" title="Detalhes">
+                        <i class=" fas fa-search"></i> Ver detalhes
                     </a>
-                </p>
+                </div>
             </div>
             <div class="coluna">
                 <img src="img/3.jpg" alt="carro 3" title="carro 3">
-                <p>Onix</p>
-                <p>
-                    <a href="Onix.html" title="Detalhes" class="btn">
+                <h3>Onix</h3>
+                <p>Fica entre os outros dois, econômico e evoluído</p>
+                <div class="btn">
+                    <a href="Onix.html" title="Detalhes">
                         <i class="fas fa-search"></i> Ver detalhes
                     </a>
-                </p>
+                </div>
             </div>
         </div>
-
     </main>
-    <footer>
-        <p>Todos os direitos reservados</p>
+
+    <footer id="footer">
+        <p class="footer-item">Todos os direitos reservados - <a href="https://www.instagram.com/mauroo_felix/">Mauro
+                Felix</a></p>
         <p>
-            <a href="https://facebook.com" title="Facebook">
+            <a class="icon" href="https://facebook.com" title="Facebook">
                 <i class="fab fa-facebook"></i>
             </a>
-            <a href="https://instagram.com" title="Instagram">
+            <a class="icon" href="https://instagram.com" title="Instagram">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://linkedin.com" title="Linkedin">
+            <a class="icon" href="https://linkedin.com" title="Linkedin">
                 <i class="fab fa-linkedin"></i>
             </a>
         </p>
     </footer>
-
     <script>
         function mostrarmenu() {
             document.querySelector("header nav").classList.toggle('mostrar')
